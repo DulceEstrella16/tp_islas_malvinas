@@ -1,3 +1,6 @@
+
+import java.awt.Color;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -26,11 +29,25 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        siguiente = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        milochoveintitres = new javax.swing.JButton();
-        milochoveintitres1 = new javax.swing.JButton();
-        milochoveintitres2 = new javax.swing.JButton();
+        juan = new javax.swing.JButton();
+        leopoldo = new javax.swing.JButton();
+        raul = new javax.swing.JButton();
+        siguiente_3 = new javax.swing.JButton();
+
+        siguiente.setText("siguiente pregunta");
+        siguiente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                siguienteMouseClicked(evt);
+            }
+        });
+        siguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguienteActionPerformed(evt);
+            }
+        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -40,43 +57,50 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("QUE PRESIDENTE PROPONE RECUPERAR LAS MALVINAS?");
 
-        milochoveintitres.setText("Juan Carlos Onogania");
-        milochoveintitres.addMouseListener(new java.awt.event.MouseAdapter() {
+        juan.setText("Juan Carlos Onogania");
+        juan.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                milochoveintitresMouseClicked(evt);
+                juanMouseClicked(evt);
             }
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                milochoveintitresMousePressed(evt);
+                juanMousePressed(evt);
             }
         });
-        milochoveintitres.addActionListener(new java.awt.event.ActionListener() {
+        juan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                milochoveintitresActionPerformed(evt);
+                juanActionPerformed(evt);
             }
         });
 
-        milochoveintitres1.setText("Leopoldo Fortunato Galtieri");
-        milochoveintitres1.addMouseListener(new java.awt.event.MouseAdapter() {
+        leopoldo.setText("Leopoldo Fortunato Galtieri");
+        leopoldo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                milochoveintitres1MouseClicked(evt);
+                leopoldoMouseClicked(evt);
             }
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                milochoveintitres1MousePressed(evt);
+                leopoldoMousePressed(evt);
             }
         });
-        milochoveintitres1.addActionListener(new java.awt.event.ActionListener() {
+        leopoldo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                milochoveintitres1ActionPerformed(evt);
+                leopoldoActionPerformed(evt);
             }
         });
 
-        milochoveintitres2.setText("Raul Alfonsin");
-        milochoveintitres2.addMouseListener(new java.awt.event.MouseAdapter() {
+        raul.setText("Raul Alfonsin");
+        raul.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                milochoveintitres2MouseClicked(evt);
+                raulMouseClicked(evt);
             }
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                milochoveintitres2MousePressed(evt);
+                raulMousePressed(evt);
+            }
+        });
+
+        siguiente_3.setText("SIGUIENTE PREGUNTA");
+        siguiente_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguiente_3ActionPerformed(evt);
             }
         });
 
@@ -87,64 +111,81 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 890, Short.MAX_VALUE)
-                    .addComponent(milochoveintitres1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(milochoveintitres, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 880, Short.MAX_VALUE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(leopoldo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(juan, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(raul, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addComponent(milochoveintitres2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(siguiente_3, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(milochoveintitres1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(milochoveintitres, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(leopoldo, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(milochoveintitres2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addComponent(juan, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(raul, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(siguiente_3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void milochoveintitresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_milochoveintitresMouseClicked
-        milochoveintitres.setBackground(Color.RED);
-    }//GEN-LAST:event_milochoveintitresMouseClicked
+    private void juanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_juanMouseClicked
+        juan.setBackground(Color.RED);
+    }//GEN-LAST:event_juanMouseClicked
 
-    private void milochoveintitresMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_milochoveintitresMousePressed
+    private void juanMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_juanMousePressed
 
-    }//GEN-LAST:event_milochoveintitresMousePressed
+    }//GEN-LAST:event_juanMousePressed
 
-    private void milochoveintitres1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_milochoveintitres1MouseClicked
+    private void leopoldoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_leopoldoMouseClicked
+        leopoldo.setBackground(Color.GREEN);
+    }//GEN-LAST:event_leopoldoMouseClicked
+
+    private void leopoldoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_leopoldoMousePressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_milochoveintitres1MouseClicked
+    }//GEN-LAST:event_leopoldoMousePressed
 
-    private void milochoveintitres1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_milochoveintitres1MousePressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_milochoveintitres1MousePressed
+    private void raulMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_raulMouseClicked
+        raul.setBackground(Color.RED);
+    }//GEN-LAST:event_raulMouseClicked
 
-    private void milochoveintitres2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_milochoveintitres2MouseClicked
+    private void raulMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_raulMousePressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_milochoveintitres2MouseClicked
+    }//GEN-LAST:event_raulMousePressed
 
-    private void milochoveintitres2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_milochoveintitres2MousePressed
+    private void leopoldoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leopoldoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_milochoveintitres2MousePressed
+    }//GEN-LAST:event_leopoldoActionPerformed
 
-    private void milochoveintitres1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_milochoveintitres1ActionPerformed
+    private void juanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_juanActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_milochoveintitres1ActionPerformed
+    }//GEN-LAST:event_juanActionPerformed
 
-    private void milochoveintitresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_milochoveintitresActionPerformed
+    private void siguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_siguienteMouseClicked
+        setVisible(false);
+        new TPMalvinas_2().setVisible(true);
+    }//GEN-LAST:event_siguienteMouseClicked
+
+    private void siguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguienteActionPerformed
+
+    }//GEN-LAST:event_siguienteActionPerformed
+
+    private void siguiente_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente_3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_milochoveintitresActionPerformed
+    }//GEN-LAST:event_siguiente_3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -184,8 +225,10 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JButton milochoveintitres;
-    private javax.swing.JButton milochoveintitres1;
-    private javax.swing.JButton milochoveintitres2;
+    private javax.swing.JButton juan;
+    private javax.swing.JButton leopoldo;
+    private javax.swing.JButton raul;
+    private javax.swing.JButton siguiente;
+    private javax.swing.JButton siguiente_3;
     // End of variables declaration//GEN-END:variables
 }
