@@ -4,7 +4,7 @@ import java.awt.Color;
 
 
 public class TPMalvinas extends javax.swing.JFrame {
-
+public static int c= 0;
     public TPMalvinas() {
         initComponents();
     }
@@ -71,25 +71,22 @@ public class TPMalvinas extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Japon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Reino_unido, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(España, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Reino_unido, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 921, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(siguiente, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(Japon, javax.swing.GroupLayout.PREFERRED_SIZE, 921, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addComponent(siguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 880, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(España, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -107,14 +104,35 @@ public class TPMalvinas extends javax.swing.JFrame {
 
     private void EspañaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EspañaMouseClicked
         España.setBackground(Color.RED);
+        Reino_unido.setBackground (Color.GREEN);
+        Japon.setBackground(Color.RED);
+        
+        España.setEnabled(false);
+        Reino_unido.setEnabled(false);
+        Japon.setEnabled(false);
+        
     }//GEN-LAST:event_EspañaMouseClicked
 
     private void Reino_unidoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Reino_unidoMouseClicked
+        España.setBackground(Color.RED);
         Reino_unido.setBackground (Color.GREEN);
+        Japon.setBackground(Color.RED);
+        
+        España.setEnabled(false);
+        Reino_unido.setEnabled(false);
+        Japon.setEnabled(false);
+        
+        c = c+1;
     }//GEN-LAST:event_Reino_unidoMouseClicked
 
     private void JaponMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JaponMouseClicked
+        España.setBackground(Color.RED);
+        Reino_unido.setBackground (Color.GREEN);
         Japon.setBackground(Color.RED);
+        
+        España.setEnabled(false);
+        Reino_unido.setEnabled(false);
+        Japon.setEnabled(false);
     }//GEN-LAST:event_JaponMouseClicked
 
     private void EspañaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EspañaMousePressed
@@ -134,6 +152,7 @@ public class TPMalvinas extends javax.swing.JFrame {
 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+            
                 new TPMalvinas().setVisible(true);
             }
         });

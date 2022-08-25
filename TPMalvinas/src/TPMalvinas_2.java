@@ -83,7 +83,7 @@ public class TPMalvinas_2 extends javax.swing.JFrame {
                     .addComponent(milochocuarentaytres, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(milochotreintaytres, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 651, Short.MAX_VALUE)
+                        .addGap(0, 649, Short.MAX_VALUE)
                         .addComponent(siguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -109,17 +109,32 @@ public class TPMalvinas_2 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+  
     private void milochoveintitresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_milochoveintitresMouseClicked
-        milochoveintitres.setBackground(Color.RED);
+       milochotreintaytres.setBackground(Color.GREEN);
+       milochoveintitres.setBackground(Color.RED);
+       milochocuarentaytres.setBackground(Color.RED);
+       
+       milochotreintaytres.setEnabled(false);
+       milochoveintitres.setEnabled(false);
+       milochocuarentaytres.setEnabled(false);
+       
     }//GEN-LAST:event_milochoveintitresMouseClicked
-
+        
     private void milochoveintitresMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_milochoveintitresMousePressed
 
     }//GEN-LAST:event_milochoveintitresMousePressed
 
     private void milochotreintaytresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_milochotreintaytresMouseClicked
        milochotreintaytres.setBackground(Color.GREEN);
+       milochoveintitres.setBackground(Color.RED);
+       milochocuarentaytres.setBackground(Color.RED);
+       
+       milochotreintaytres.setEnabled(false);
+       milochoveintitres.setEnabled(false);
+       milochocuarentaytres.setEnabled(false);
+       
+       TPMalvinas.c ++; 
     }//GEN-LAST:event_milochotreintaytresMouseClicked
 
     private void milochotreintaytresMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_milochotreintaytresMousePressed
@@ -127,7 +142,14 @@ public class TPMalvinas_2 extends javax.swing.JFrame {
     }//GEN-LAST:event_milochotreintaytresMousePressed
 
     private void milochocuarentaytresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_milochocuarentaytresMouseClicked
-        milochocuarentaytres.setBackground(Color.RED);
+        milochotreintaytres.setBackground(Color.GREEN);
+       milochoveintitres.setBackground(Color.RED);
+       milochocuarentaytres.setBackground(Color.RED);
+       
+       milochotreintaytres.setEnabled(false);
+       milochoveintitres.setEnabled(false);
+       milochocuarentaytres.setEnabled(false);
+       
     }//GEN-LAST:event_milochocuarentaytresMouseClicked
 
     private void milochocuarentaytresMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_milochocuarentaytresMousePressed

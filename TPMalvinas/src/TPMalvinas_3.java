@@ -35,7 +35,7 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
         juan = new javax.swing.JButton();
         leopoldo = new javax.swing.JButton();
         raul = new javax.swing.JButton();
-        siguiente_3 = new javax.swing.JButton();
+        SIGG = new javax.swing.JButton();
 
         siguiente.setText("siguiente pregunta");
         siguiente.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -97,10 +97,15 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
             }
         });
 
-        siguiente_3.setText("SIGUIENTE PREGUNTA");
-        siguiente_3.addActionListener(new java.awt.event.ActionListener() {
+        SIGG.setText("siguiente pregunta");
+        SIGG.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SIGGMouseClicked(evt);
+            }
+        });
+        SIGG.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                siguiente_3ActionPerformed(evt);
+                SIGGActionPerformed(evt);
             }
         });
 
@@ -118,7 +123,7 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
                     .addComponent(raul, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(siguiente_3, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(SIGG, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -135,7 +140,7 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(raul, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(siguiente_3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(SIGG, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -144,6 +149,12 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
 
     private void juanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_juanMouseClicked
         juan.setBackground(Color.RED);
+        leopoldo.setBackground(Color.GREEN);
+        raul.setBackground(Color.RED);
+        
+       juan.setEnabled(false);
+       leopoldo.setEnabled(false);
+       raul.setEnabled(false);
     }//GEN-LAST:event_juanMouseClicked
 
     private void juanMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_juanMousePressed
@@ -151,7 +162,15 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
     }//GEN-LAST:event_juanMousePressed
 
     private void leopoldoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_leopoldoMouseClicked
+        juan.setBackground(Color.RED);
         leopoldo.setBackground(Color.GREEN);
+        raul.setBackground(Color.RED);
+        
+       juan.setEnabled(false);
+       leopoldo.setEnabled(false);
+       raul.setEnabled(false);
+       
+       TPMalvinas.c ++; 
     }//GEN-LAST:event_leopoldoMouseClicked
 
     private void leopoldoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_leopoldoMousePressed
@@ -159,7 +178,13 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
     }//GEN-LAST:event_leopoldoMousePressed
 
     private void raulMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_raulMouseClicked
+        juan.setBackground(Color.RED);
+        leopoldo.setBackground(Color.GREEN);
         raul.setBackground(Color.RED);
+        
+       juan.setEnabled(false);
+       leopoldo.setEnabled(false);
+       raul.setEnabled(false);
     }//GEN-LAST:event_raulMouseClicked
 
     private void raulMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_raulMousePressed
@@ -175,17 +200,21 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
     }//GEN-LAST:event_juanActionPerformed
 
     private void siguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_siguienteMouseClicked
-        setVisible(false);
-        new TPMalvinas_2().setVisible(true);
+        
     }//GEN-LAST:event_siguienteMouseClicked
 
     private void siguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguienteActionPerformed
 
     }//GEN-LAST:event_siguienteActionPerformed
 
-    private void siguiente_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente_3ActionPerformed
+    private void SIGGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SIGGActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_siguiente_3ActionPerformed
+    }//GEN-LAST:event_SIGGActionPerformed
+
+    private void SIGGMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SIGGMouseClicked
+        setVisible(false);
+        new TPMalvinas_4().setVisible(true);
+    }//GEN-LAST:event_SIGGMouseClicked
 
     /**
      * @param args the command line arguments
@@ -223,12 +252,12 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton SIGG;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JButton juan;
     private javax.swing.JButton leopoldo;
     private javax.swing.JButton raul;
     private javax.swing.JButton siguiente;
-    private javax.swing.JButton siguiente_3;
     // End of variables declaration//GEN-END:variables
 }
