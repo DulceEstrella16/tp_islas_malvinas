@@ -26,19 +26,14 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel1" alignment="1" max="32767" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Component id="veinte" min="-2" pref="904" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
-                  <Component id="jLabel2" max="32767" attributes="0"/>
+                  <Component id="veintiuno" alignment="1" max="32767" attributes="0"/>
+                  <Component id="dieciocho" alignment="1" max="32767" attributes="0"/>
+                  <Component id="quince" alignment="1" max="32767" attributes="0"/>
+                  <Component id="jLabel2" alignment="0" pref="880" max="32767" attributes="0"/>
+                  <Component id="jLabel1" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="veinticinco" alignment="1" min="-2" pref="904" max="-2" attributes="0"/>
-                          <Component id="treinta" alignment="1" min="-2" pref="904" max="-2" attributes="0"/>
-                          <Component id="siguiente" alignment="1" min="-2" pref="231" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="siguiente" min="-2" pref="255" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -48,19 +43,18 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" pref="201" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="272" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" pref="44" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-              <Component id="veinte" min="-2" pref="40" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="veinticinco" min="-2" pref="40" max="-2" attributes="0"/>
+              <Component id="quince" min="-2" pref="44" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="treinta" min="-2" pref="40" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="siguiente" max="32767" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="dieciocho" min="-2" pref="41" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="veintiuno" min="-2" pref="41" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="siguiente" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -70,39 +64,39 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\PC01\Documents\GitHub\tp_islas_malvinas\TPMalvinas\Imagenes\pregunta-6.png"/>
+          <Image iconType="2" name="C:\Users\PC01\Documents\GitHub\tp_islas_malvinas\TPMalvinas\Imagenes\pregunta-9.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="CUANTOS HOMBRES MANDO REINO UNIDO A LA GUERRA?"/>
+        <Property name="text" type="java.lang.String" value="&#xbf;EN QUE FECHA LOS SOLADADOS ARGENTINOS SE RETIRAN Y RINDEN EN LA GUERRA DE LAS ISLAS MALVINAS?"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="veinte">
+    <Component class="javax.swing.JButton" name="quince">
       <Properties>
-        <Property name="text" type="java.lang.String" value="20.000"/>
+        <Property name="text" type="java.lang.String" value="15 de Junio "/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="veinteMouseClicked"/>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="veinteActionPerformed"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="quinceMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="quinceActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="veinticinco">
+    <Component class="javax.swing.JButton" name="dieciocho">
       <Properties>
-        <Property name="text" type="java.lang.String" value="25.000"/>
+        <Property name="text" type="java.lang.String" value="18 de Junio"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="veinticincoMouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="dieciochoMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="treinta">
+    <Component class="javax.swing.JButton" name="veintiuno">
       <Properties>
-        <Property name="text" type="java.lang.String" value="30.000"/>
+        <Property name="text" type="java.lang.String" value="21 de Junio"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="treintaMouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="veintiunoMouseClicked"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="siguiente">
@@ -111,7 +105,6 @@
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="siguienteMouseClicked"/>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="siguienteActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
