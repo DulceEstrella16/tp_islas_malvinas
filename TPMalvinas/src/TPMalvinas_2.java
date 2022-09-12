@@ -5,6 +5,7 @@ public class TPMalvinas_2 extends javax.swing.JFrame {
 
     public TPMalvinas_2() {
         initComponents();
+        siguiente.setEnabled(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -18,11 +19,14 @@ public class TPMalvinas_2 extends javax.swing.JFrame {
         milochocuarentaytres = new javax.swing.JButton();
         siguiente = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("INSERTE PREGUNTA");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         milochoveintitres.setText("1823");
         milochoveintitres.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -33,9 +37,11 @@ public class TPMalvinas_2 extends javax.swing.JFrame {
                 milochoveintitresMousePressed(evt);
             }
         });
+        getContentPane().add(milochoveintitres, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 387, 880, 32));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC01\\Documents\\GitHub\\tp_islas_malvinas\\TPMalvinas\\Imagenes\\pregunta-2.png")); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 880, -1));
 
         milochotreintaytres.setText("1833");
         milochotreintaytres.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -46,6 +52,7 @@ public class TPMalvinas_2 extends javax.swing.JFrame {
                 milochotreintaytresMousePressed(evt);
             }
         });
+        getContentPane().add(milochotreintaytres, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 468, 880, 32));
 
         milochocuarentaytres.setText("1843");
         milochocuarentaytres.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -56,6 +63,7 @@ public class TPMalvinas_2 extends javax.swing.JFrame {
                 milochocuarentaytresMousePressed(evt);
             }
         });
+        getContentPane().add(milochocuarentaytres, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 425, 880, 32));
 
         siguiente.setText("siguiente pregunta");
         siguiente.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -68,44 +76,19 @@ public class TPMalvinas_2 extends javax.swing.JFrame {
                 siguienteActionPerformed(evt);
             }
         });
+        getContentPane().add(siguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(659, 509, 231, 24));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("EN QUE AÑO REINO UNIDO LLEGO A LAS ISLAS MALVINAS Y ECHO A ARGENTINA?");
+        jLabel3.setText("¿EN QUE AÑO EL REINO UNIDO TOMO A LA FUERZA LAS ISLAS MALVINAS?");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 470, 20));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(milochoveintitres, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(milochocuarentaytres, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(milochotreintaytres, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 649, Short.MAX_VALUE)
-                        .addComponent(siguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(milochoveintitres, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(milochocuarentaytres, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(milochotreintaytres, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(9, 9, 9)
-                .addComponent(siguiente, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC01\\Documents\\GitHub\\tp_islas_malvinas\\TPMalvinas\\Imagenes\\000_blanco_blanco_7000.jpg")); // NOI18N
+        jLabel5.setText("jLabel5");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 480, 40));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC01\\Documents\\GitHub\\tp_islas_malvinas\\TPMalvinas\\Imagenes\\malv.png")); // NOI18N
+        jLabel4.setText("jLabel4");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 550));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -119,6 +102,7 @@ public class TPMalvinas_2 extends javax.swing.JFrame {
        milochoveintitres.setEnabled(false);
        milochocuarentaytres.setEnabled(false);
        
+       siguiente.setEnabled(true);
     }//GEN-LAST:event_milochoveintitresMouseClicked
         
     private void milochoveintitresMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_milochoveintitresMousePressed
@@ -134,6 +118,7 @@ public class TPMalvinas_2 extends javax.swing.JFrame {
        milochoveintitres.setEnabled(false);
        milochocuarentaytres.setEnabled(false);
        
+       siguiente.setEnabled(true);
        TPMalvinas.c ++; 
     }//GEN-LAST:event_milochotreintaytresMouseClicked
 
@@ -150,6 +135,7 @@ public class TPMalvinas_2 extends javax.swing.JFrame {
        milochoveintitres.setEnabled(false);
        milochocuarentaytres.setEnabled(false);
        
+       siguiente.setEnabled(true);
     }//GEN-LAST:event_milochocuarentaytresMouseClicked
 
     private void milochocuarentaytresMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_milochocuarentaytresMousePressed
@@ -204,6 +190,8 @@ public class TPMalvinas_2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JButton milochocuarentaytres;
     private javax.swing.JButton milochotreintaytres;
     private javax.swing.JButton milochoveintitres;

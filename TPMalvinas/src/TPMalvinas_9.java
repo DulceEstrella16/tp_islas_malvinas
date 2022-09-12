@@ -18,6 +18,7 @@ public class TPMalvinas_9 extends javax.swing.JFrame {
      */
     public TPMalvinas_9() {
         initComponents();
+        siguiente.setEnabled(false);
     }
 
     /**
@@ -35,16 +36,21 @@ public class TPMalvinas_9 extends javax.swing.JFrame {
         dieciocho = new javax.swing.JButton();
         veintiuno = new javax.swing.JButton();
         siguiente = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC01\\Documents\\GitHub\\tp_islas_malvinas\\TPMalvinas\\Imagenes\\pregunta-9.png")); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 880, 272));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("¿EN QUE FECHA LOS SOLADADOS ARGENTINOS SE RETIRAN Y RINDEN EN LA GUERRA DE LAS ISLAS MALVINAS?");
+        jLabel2.setText("¿EN QUE FECHA LOS SOLADADOS ARGENTINOS SE RINDEN DE LA GUERRA DE LAS ISLAS MALVINAS?");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 880, 44));
 
-        quince.setText("15 de Junio ");
+        quince.setText("14 de Junio ");
         quince.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 quinceMouseClicked(evt);
@@ -55,6 +61,7 @@ public class TPMalvinas_9 extends javax.swing.JFrame {
                 quinceActionPerformed(evt);
             }
         });
+        getContentPane().add(quince, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 880, 44));
 
         dieciocho.setText("18 de Junio");
         dieciocho.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -62,6 +69,7 @@ public class TPMalvinas_9 extends javax.swing.JFrame {
                 dieciochoMouseClicked(evt);
             }
         });
+        getContentPane().add(dieciocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, 880, 41));
 
         veintiuno.setText("21 de Junio");
         veintiuno.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -69,6 +77,7 @@ public class TPMalvinas_9 extends javax.swing.JFrame {
                 veintiunoMouseClicked(evt);
             }
         });
+        getContentPane().add(veintiuno, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 437, 880, 41));
 
         siguiente.setText("siguiente pregunta");
         siguiente.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -76,40 +85,15 @@ public class TPMalvinas_9 extends javax.swing.JFrame {
                 siguienteMouseClicked(evt);
             }
         });
+        getContentPane().add(siguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(635, 484, 255, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(veintiuno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(dieciocho, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(quince, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 880, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(siguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(quince, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(dieciocho, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(veintiuno, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(siguiente)
-                .addContainerGap())
-        );
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC01\\Documents\\GitHub\\tp_islas_malvinas\\TPMalvinas\\Imagenes\\000_blanco_blanco_7000.jpg")); // NOI18N
+        jLabel4.setText("jLabel4");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, 660, 40));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC01\\Documents\\GitHub\\tp_islas_malvinas\\TPMalvinas\\Imagenes\\malv.png")); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 520));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -127,6 +111,8 @@ public class TPMalvinas_9 extends javax.swing.JFrame {
         veintiuno.setEnabled(false);
         dieciocho.setEnabled(false);
         
+        siguiente.setEnabled(true);
+        
         TPMalvinas.c ++; 
     }//GEN-LAST:event_quinceMouseClicked
 
@@ -139,6 +125,8 @@ public class TPMalvinas_9 extends javax.swing.JFrame {
         veintiuno.setEnabled(false);
         dieciocho.setEnabled(false);
         
+        siguiente.setEnabled(true);
+        
     }//GEN-LAST:event_dieciochoMouseClicked
 
     private void veintiunoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veintiunoMouseClicked
@@ -149,6 +137,8 @@ public class TPMalvinas_9 extends javax.swing.JFrame {
         quince.setEnabled(false);
         veintiuno.setEnabled(false);
         dieciocho.setEnabled(false);
+        
+        siguiente.setEnabled(true);
         
     }//GEN-LAST:event_veintiunoMouseClicked
 
@@ -196,6 +186,8 @@ public class TPMalvinas_9 extends javax.swing.JFrame {
     private javax.swing.JButton dieciocho;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JButton quince;
     private javax.swing.JButton siguiente;
     private javax.swing.JButton veintiuno;

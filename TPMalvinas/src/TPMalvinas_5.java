@@ -17,6 +17,7 @@ public class TPMalvinas_5 extends javax.swing.JFrame {
      */
     public TPMalvinas_5() {
         initComponents();
+        sig5.setEnabled(false);
     }
 
     /**
@@ -34,18 +35,28 @@ public class TPMalvinas_5 extends javax.swing.JFrame {
         pbcl = new javax.swing.JButton();
         sig5 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("¿QUE PAISES APOYABAN A ARGETINA EN ESTA GUERRA?");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 240, 340, 30));
 
-        ppvl.setText("Panamá, Perú, Venezuela y la unión Soviética ");
+        ppvl.setText("Panamá, Perú, Venezuela y la Unión Soviética ");
         ppvl.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ppvlMouseClicked(evt);
             }
         });
+        ppvl.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ppvlActionPerformed(evt);
+            }
+        });
+        getContentPane().add(ppvl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 299, 880, 40));
 
         pcvp.setText("Panamá, Colombia, Venezuela y Paraguay");
         pcvp.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -58,13 +69,15 @@ public class TPMalvinas_5 extends javax.swing.JFrame {
                 pcvpActionPerformed(evt);
             }
         });
+        getContentPane().add(pcvp, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 357, 880, 40));
 
-        pbcl.setText("Panamá, Brasil, Chile y la unión Soviética");
+        pbcl.setText("Panamá, Brasil, Chile y la Unión Soviética");
         pbcl.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 pbclMouseClicked(evt);
             }
         });
+        getContentPane().add(pbcl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 408, 880, 40));
 
         sig5.setText("siguiente pregunta");
         sig5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -77,44 +90,19 @@ public class TPMalvinas_5 extends javax.swing.JFrame {
                 sig5ActionPerformed(evt);
             }
         });
+        getContentPane().add(sig5, new org.netbeans.lib.awtextra.AbsoluteConstraints(633, 466, 257, -1));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC01\\Documents\\GitHub\\tp_islas_malvinas\\TPMalvinas\\Imagenes\\pregunta-5.png")); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 880, 216));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 880, Short.MAX_VALUE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(ppvl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pcvp, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pbcl, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(sig5, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
-                .addComponent(ppvl, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(pcvp, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(pbcl, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(sig5, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC01\\Documents\\GitHub\\tp_islas_malvinas\\TPMalvinas\\Imagenes\\000_blanco_blanco_7000.jpg")); // NOI18N
+        jLabel4.setText("jLabel4");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 240, 340, 40));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC01\\Documents\\GitHub\\tp_islas_malvinas\\TPMalvinas\\Imagenes\\malv.png")); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 500));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -136,6 +124,7 @@ public class TPMalvinas_5 extends javax.swing.JFrame {
         pcvp.setEnabled(false);
         pbcl.setEnabled(false);
         
+         sig5.setEnabled(true);
         TPMalvinas.c ++;                   
     }//GEN-LAST:event_ppvlMouseClicked
 
@@ -148,6 +137,7 @@ public class TPMalvinas_5 extends javax.swing.JFrame {
         pcvp.setEnabled(false);
         pbcl.setEnabled(false);
         
+        sig5.setEnabled(true);
     }//GEN-LAST:event_pcvpMouseClicked
 
     private void pbclMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pbclMouseClicked
@@ -158,12 +148,18 @@ public class TPMalvinas_5 extends javax.swing.JFrame {
        ppvl.setEnabled(false);
        pcvp.setEnabled(false);
        pbcl.setEnabled(false);
+       
+       sig5.setEnabled(true);
     }//GEN-LAST:event_pbclMouseClicked
 
     private void sig5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sig5MouseClicked
         setVisible(false);
         new TPMalvinas_6().setVisible(true);
     }//GEN-LAST:event_sig5MouseClicked
+
+    private void ppvlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ppvlActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ppvlActionPerformed
 
     /**
      * @param args the command line arguments
@@ -201,8 +197,10 @@ public class TPMalvinas_5 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JButton pbcl;
     private javax.swing.JButton pcvp;
     private javax.swing.JButton ppvl;

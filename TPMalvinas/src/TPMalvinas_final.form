@@ -23,13 +23,13 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="jLabel2" pref="569" max="32767" attributes="0"/>
-                  <Component id="b" max="32767" attributes="0"/>
+                  <Component id="b" alignment="1" min="-2" pref="428" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="0" min="-2" pref="428" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -37,10 +37,10 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jLabel2" max="32767" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" pref="347" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="b" min="-2" pref="29" max="-2" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -50,7 +50,7 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\PC01\Documents\GitHub\tp_islas_malvinas\TPMalvinas\Imagenes\94c58f2d0c6945c68276dd88db52c5eb-felicitaciones-cita-en-espa-ol.png"/>
+          <Image iconType="2" name="C:\Users\PC01\Documents\GitHub\tp_islas_malvinas\TPMalvinas\Imagenes\DTB7h8wXUAAGPSk.png"/>
         </Property>
       </Properties>
     </Component>
