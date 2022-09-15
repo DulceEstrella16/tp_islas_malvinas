@@ -85,6 +85,11 @@ public class TPMalvinas_9 extends javax.swing.JFrame {
                 siguienteMouseClicked(evt);
             }
         });
+        siguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguienteActionPerformed(evt);
+            }
+        });
         getContentPane().add(siguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(635, 484, 255, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC01\\Documents\\GitHub\\tp_islas_malvinas\\TPMalvinas\\Imagenes\\000_blanco_blanco_7000.jpg")); // NOI18N
@@ -143,9 +148,13 @@ public class TPMalvinas_9 extends javax.swing.JFrame {
     }//GEN-LAST:event_veintiunoMouseClicked
 
     private void siguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_siguienteMouseClicked
-       setVisible(false);
-        new TPMalvinas_d().setVisible(true);
+       
     }//GEN-LAST:event_siguienteMouseClicked
+
+    private void siguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguienteActionPerformed
+        setVisible(false);
+        new TPMalvinas_d().setVisible(true);
+    }//GEN-LAST:event_siguienteActionPerformed
 
     /**
      * @param args the command line arguments

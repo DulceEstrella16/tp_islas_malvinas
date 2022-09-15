@@ -111,7 +111,8 @@ public class TPMalvinas_7 extends javax.swing.JFrame {
     }//GEN-LAST:event_veintisieteActionPerformed
 
     private void sigggActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sigggActionPerformed
-        // TODO add your handling code here:
+        setVisible(false);
+        new TPMalvinas_8().setVisible(true);
     }//GEN-LAST:event_sigggActionPerformed
 
     private void veintisieteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veintisieteMouseClicked
@@ -127,8 +128,7 @@ public class TPMalvinas_7 extends javax.swing.JFrame {
     }//GEN-LAST:event_veintisieteMouseClicked
 
     private void sigggMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sigggMouseClicked
-        setVisible(false);
-        new TPMalvinas_8().setVisible(true);
+        
     }//GEN-LAST:event_sigggMouseClicked
 
     private void primeroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_primeroMouseClicked

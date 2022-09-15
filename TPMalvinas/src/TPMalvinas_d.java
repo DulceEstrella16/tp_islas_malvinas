@@ -86,6 +86,11 @@ public class TPMalvinas_d extends javax.swing.JFrame {
                 siguMouseClicked(evt);
             }
         });
+        sigu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siguActionPerformed(evt);
+            }
+        });
         getContentPane().add(sigu, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 580, 238, -1));
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40, 120));
 
@@ -144,9 +149,13 @@ public class TPMalvinas_d extends javax.swing.JFrame {
     }//GEN-LAST:event_seisMouseClicked
 
     private void siguMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_siguMouseClicked
-        setVisible(false);
-        new TPMalvinas_final().setVisible(true);
+        
     }//GEN-LAST:event_siguMouseClicked
+
+    private void siguActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguActionPerformed
+        setVisible(false);
+        new TPMalvinas_final().setVisible(true); 
+    }//GEN-LAST:event_siguActionPerformed
 
     /**
      * @param args the command line arguments

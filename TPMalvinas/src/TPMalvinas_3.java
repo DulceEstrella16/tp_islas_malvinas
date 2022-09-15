@@ -18,7 +18,7 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
      */
     public TPMalvinas_3() {
         initComponents();
-        siguiente.setEnabled(false);
+        SIGG.setEnabled(false);
     }
 
     /**
@@ -139,7 +139,7 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
        leopoldo.setEnabled(false);
        raul.setEnabled(false);
        
-        siguiente.setEnabled(true);
+        SIGG.setEnabled(true);
     }//GEN-LAST:event_juanMouseClicked
 
     private void juanMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_juanMousePressed
@@ -155,7 +155,7 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
        leopoldo.setEnabled(false);
        raul.setEnabled(false);
        
-       siguiente.setEnabled(true);
+       SIGG.setEnabled(true);
        TPMalvinas.c ++; 
     }//GEN-LAST:event_leopoldoMouseClicked
 
@@ -172,7 +172,7 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
        leopoldo.setEnabled(false);
        raul.setEnabled(false);
        
-       siguiente.setEnabled(true);
+       SIGG.setEnabled(true);
        
     }//GEN-LAST:event_raulMouseClicked
 
@@ -197,12 +197,12 @@ public class TPMalvinas_3 extends javax.swing.JFrame {
     }//GEN-LAST:event_siguienteActionPerformed
 
     private void SIGGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SIGGActionPerformed
-        // TODO add your handling code here:
+        setVisible(false);
+        new TPMalvinas_4().setVisible(true);
     }//GEN-LAST:event_SIGGActionPerformed
 
     private void SIGGMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SIGGMouseClicked
-        setVisible(false);
-        new TPMalvinas_4().setVisible(true);
+        
     }//GEN-LAST:event_SIGGMouseClicked
 
     /**

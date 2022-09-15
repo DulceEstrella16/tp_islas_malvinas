@@ -99,7 +99,8 @@ public class TPMalvinas_4 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void sigActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sigActionPerformed
-        // TODO add your handling code here:
+        setVisible(false);
+        new TPMalvinas_5().setVisible(true);
     }//GEN-LAST:event_sigActionPerformed
 
     private void dieciochomMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dieciochomMouseClicked
@@ -140,8 +141,7 @@ public class TPMalvinas_4 extends javax.swing.JFrame {
     }//GEN-LAST:event_dieciochoaMouseClicked
 
     private void sigMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sigMouseClicked
-        setVisible(false);
-        new TPMalvinas_5().setVisible(true);
+        
     }//GEN-LAST:event_sigMouseClicked
 
     /**

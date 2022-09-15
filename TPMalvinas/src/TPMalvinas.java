@@ -133,12 +133,12 @@ public static int c= 0;
     }//GEN-LAST:event_EspañaMousePressed
 
     private void siguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguienteActionPerformed
-
+setVisible(false);
+     new TPMalvinas_2().setVisible(true);
     }//GEN-LAST:event_siguienteActionPerformed
 
     private void siguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_siguienteMouseClicked
-     setVisible(false);
-     new TPMalvinas_2().setVisible(true);
+     
     }//GEN-LAST:event_siguienteMouseClicked
 
     public static void main(String args[]) {

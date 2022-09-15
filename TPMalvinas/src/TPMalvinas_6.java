@@ -108,12 +108,12 @@ public class TPMalvinas_6 extends javax.swing.JFrame {
     }//GEN-LAST:event_veinteActionPerformed
 
     private void siguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_siguienteMouseClicked
-        setVisible(false);
-        new TPMalvinas_7().setVisible(true);
+        
     }//GEN-LAST:event_siguienteMouseClicked
 
     private void siguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguienteActionPerformed
-
+setVisible(false);
+        new TPMalvinas_7().setVisible(true);
     }//GEN-LAST:event_siguienteActionPerformed
 
     private void veinteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_veinteMouseClicked
